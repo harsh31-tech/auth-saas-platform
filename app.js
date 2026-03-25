@@ -1,0 +1,10 @@
+require("dotenv").config();
+const express = require("express");
+const app = express();
+const Router = express.Router();
+const cookieParser = require("cookie-parser");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const passport = require("passport");
+const GoogleStrategy = require("passport-google-oauth20").Strategy;
+const GithubStrategy = require("passport-github2").Strategy;
